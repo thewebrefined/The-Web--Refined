@@ -1,0 +1,18 @@
+login: &login
+  access_key_id: 
+  secret_access_key: 
+
+development:
+  bucket_name: The-Web--Refined_development
+  <<: *login
+  distribution_domain: 
+
+test:
+  bucket_name: The-Web--Refined_test
+  <<: *login
+  distribution_domain: 
+
+production:
+  bucket_name: The-Web--Refined_production
+  <<: *login
+  distribution_domain: 

@@ -1,0 +1,20 @@
+login: &login
+  adapter: mysql
+  host: localhost
+  username: root
+  password: root
+
+development:
+  database: The-Web--Refined_development
+  <<: *login
+
+test:
+  database: The-Web--Refined_test
+  <<: *login
+
+production:
+  database: The-Web--Refined_production
+  adapter: mysql
+  host: localhost
+  username: The-Web--Refined_production_login
+  password: The-Web--Refined_production_password
