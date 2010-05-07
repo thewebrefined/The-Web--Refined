@@ -5,5 +5,6 @@ gem "refinerycms", "0.9.6.31"
 gem "rails", "2.3.5"
 gem "hpricot"
 
+gem "thin", :group => :production
 gem "pg", :group => :production
 
